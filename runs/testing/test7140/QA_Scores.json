@@ -1,0 +1,12 @@
+{
+    "predicted_frames": {
+        "RMSE08": 36.1639,
+        "PSNR08": 17.5973,
+        "SSIM08": 0.5245,
+        "LPIPS08": 0.4876
+    },
+    "predicted_depths": {
+        "DepthMAE18": 3.5434,
+        "DepthSROCC08": 0.5103
+    }
+}

@@ -1,0 +1,47 @@
+# Parameters for Config:
+# ==============================================================================
+Config.augmentation01 = True
+Config.augmentation_loss_mults = [10]
+Config.augmentation_loss_names = ['AugmentationsDepthLoss09']
+Config.augmentation_loss_rmse_threshold = 0.2
+Config.augmentation_loss_start_iter = 5000
+Config.background_alpha_loss_mult = 0.01
+Config.background_alpha_loss_name = 'BackgroundAlphaLoss01'
+Config.batch_size = 8192
+Config.data_dir = '../../../../../databases/NeRF_Synthetic/data/'
+Config.dataset_loader = 'blender'
+Config.factor = 0
+Config.far = 6
+Config.hash_decay_mults = 10
+Config.near = 2
+Config.render_chunk_size = 8192
+Config.scene_name = 'mic'
+Config.test_set_num = 4
+Config.train_num = 3014
+Config.train_set_num = 4
+
+# Parameters for Model:
+# ==============================================================================
+Model.raydist_fn = None
+
+# Parameters for NerfMLP:
+# ==============================================================================
+NerfMLP.disable_density_normals = True
+
+# Parameters for NerfMLPAugmentation01:
+# ==============================================================================
+NerfMLPAugmentation01.disable_density_normals = True
+NerfMLPAugmentation01.grid_log2_hashmap_size = 11
+
+# Parameters for PropMLP:
+# ==============================================================================
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1
+
+# Parameters for PropMLPAugmentation01:
+# ==============================================================================
+PropMLPAugmentation01.disable_density_normals = True
+PropMLPAugmentation01.disable_rgb = True
+PropMLPAugmentation01.grid_level_dim = 1
+PropMLPAugmentation01.grid_log2_hashmap_size = 11

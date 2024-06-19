@@ -1,0 +1,53 @@
+# Parameters for Config:
+# ==============================================================================
+Config.augmentation01 = True
+Config.augmentation_loss_mults = [10]
+Config.augmentation_loss_names = ['AugmentationsDepthLoss09']
+Config.augmentation_loss_rmse_threshold = 0.2
+Config.augmentation_loss_start_iter = 5000
+Config.batch_size = 16384
+Config.data_dir = '../../../../../databases/MipNeRF360/data/'
+Config.dataset_loader = 'llff'
+Config.factor = 2
+Config.far = 1000000.0
+Config.near = 0.2
+Config.render_chunk_size = 8192
+Config.scene_name = 'bonsai'
+Config.test_set_num = 6
+Config.train_num = 7148
+Config.train_set_num = 6
+
+# Parameters for Model:
+# ==============================================================================
+Model.opaque_background = True
+Model.raydist_fn = 'power_transformation'
+
+# Parameters for ModelAugmentation01:
+# ==============================================================================
+ModelAugmentation01.near_depth_s = 0.3
+ModelAugmentation01.prop_desired_grid_size = [512, 2048]
+
+# Parameters for NerfMLP:
+# ==============================================================================
+NerfMLP.disable_density_normals = True
+
+# Parameters for NerfMLPAugmentation01:
+# ==============================================================================
+NerfMLPAugmentation01.disable_density_normals = True
+NerfMLPAugmentation01.grid_base_resolution = 16
+NerfMLPAugmentation01.grid_desired_resolution = 8192
+NerfMLPAugmentation01.grid_log2_hashmap_size = 11
+
+# Parameters for PropMLP:
+# ==============================================================================
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1
+
+# Parameters for PropMLPAugmentation01:
+# ==============================================================================
+PropMLPAugmentation01.disable_density_normals = True
+PropMLPAugmentation01.disable_rgb = True
+PropMLPAugmentation01.grid_base_resolution = 16
+PropMLPAugmentation01.grid_level_dim = 1
+PropMLPAugmentation01.grid_log2_hashmap_size = 11

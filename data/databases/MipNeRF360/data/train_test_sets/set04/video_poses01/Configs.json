@@ -1,0 +1,8 @@
+{
+    "PosesCreator": "VideoPoseCreator01_Ellipse",
+    "set_num": 4,
+    "num_frames": 960,
+    "constant_speed": true,
+    "z_variation": 0,
+    "z_phase": 0
+}

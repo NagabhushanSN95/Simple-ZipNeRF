@@ -1,0 +1,40 @@
+Config.data_dir = '../../../../../databases/NeRF_Synthetic/data/'
+Config.dataset_loader = 'blender'
+Config.train_num = 3012
+Config.train_set_num = 2
+Config.test_set_num = 2
+Config.scene_name = "mic"
+Config.near = 2
+Config.far = 6
+Config.factor = 0
+Config.hash_decay_mults = 10
+ 
+Model.raydist_fn = None
+ 
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1
+ 
+NerfMLP.disable_density_normals = True
+ 
+Config.background_alpha_loss_name = 'BackgroundAlphaLoss01'
+Config.background_alpha_loss_mult = 0.01
+ 
+Config.augmentation01 = True
+# ModelAugmentation01.near_depth_s = 0.3
+# PropMLPAugmentation01.grid_base_resolution = 16
+# NerfMLPAugmentation01.grid_base_resolution = 16
+# ModelAugmentation01.prop_desired_grid_size = [512, 2048]
+# NerfMLPAugmentation01.grid_desired_resolution = 8192
+PropMLPAugmentation01.grid_log2_hashmap_size = 11
+NerfMLPAugmentation01.grid_log2_hashmap_size = 11
+Config.augmentation_loss_names = ['AugmentationsDepthLoss09',]
+Config.augmentation_loss_mults = [10,]
+Config.augmentation_loss_start_iter = 5000
+Config.augmentation_loss_rmse_threshold = 0.2
+ 
+# ModelAugmentation01.raydist_fn = None
+PropMLPAugmentation01.disable_density_normals = True
+PropMLPAugmentation01.disable_rgb = True
+PropMLPAugmentation01.grid_level_dim = 1
+NerfMLPAugmentation01.disable_density_normals = True
