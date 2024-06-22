@@ -2,10 +2,10 @@
 Official code release accompanying the paper "Simple-RF: Regularizing Sparse Input Radiance Fields with Simpler Solutions"
 
 * [Project Page](https://nagabhushansn95.github.io/publications/2024/Simple-RF.html)
-* [Published Data (OneDrive)]()
+* [Published Data (OneDrive)](https://indianinstituteofscience-my.sharepoint.com/:f:/g/personal/nagabhushans_iisc_ac_in/Egl0tSqfBnBIqKYZP0nJPFoB24jhJe0EQQe1KBrav63ohQ?e=0GSEmV)
 
 > [!NOTE]
-> This repository contains the code for Simple-ZipNeRF only. The integrated code for Simple-NeRF and Simple-TensoRF can be found at [NagabhushanSN95/Simple-RF](https://github.com/NagabhushanSN95/Simple-RF)
+> This repository contains the code for Simple-ZipNeRF only. The integrated code for Simple-NeRF and Simple-TensoRF can be found at [NagabhushanSN95/Simple-RF](https://github.com/NagabhushanSN95/Simple-RF).
 
 ## Setup
 
