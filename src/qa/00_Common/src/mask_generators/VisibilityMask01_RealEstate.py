@@ -171,8 +171,8 @@ def demo1():
         'gen_set_num': 12,
         'database_name': 'RealEstate10K',
         'database_dirpath': 'RealEstate10K/data',
-        'dense_nerf_dirpath': 'data/DenseNeRF/runs/training/train0001',
-        'depth_dirpath': 'data/DenseNeRF/runs/testing/test0001',
+        'dense_nerf_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/training/train0001',
+        'depth_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/testing/test0001',
         'depth_error_threshold': 0.05,
     }
     start_generation(gen_configs)
@@ -183,8 +183,8 @@ def demo1():
         'gen_set_num': 13,
         'database_name': 'RealEstate10K',
         'database_dirpath': 'RealEstate10K/data',
-        'dense_nerf_dirpath': 'data/DenseNeRF/runs/training/train0001',
-        'depth_dirpath': 'data/DenseNeRF/runs/testing/test0001',
+        'dense_nerf_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/training/train0001',
+        'depth_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/testing/test0001',
         'depth_error_threshold': 0.05,
     }
     start_generation(gen_configs)
@@ -195,8 +195,8 @@ def demo1():
         'gen_set_num': 14,
         'database_name': 'RealEstate10K',
         'database_dirpath': 'RealEstate10K/data',
-        'dense_nerf_dirpath': 'data/DenseNeRF/runs/training/train0001',
-        'depth_dirpath': 'data/DenseNeRF/runs/testing/test0001',
+        'dense_nerf_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/training/train0001',
+        'depth_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/testing/test0001',
         'depth_error_threshold': 0.05,
     }
     start_generation(gen_configs)

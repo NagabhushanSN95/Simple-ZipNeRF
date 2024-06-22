@@ -188,7 +188,7 @@ def demo1():
     root_dirpath = Path('../../../../')
     database_dirpath = root_dirpath / 'data/databases/MipNeRF360/data'
     pred_videos_dirpath = root_dirpath / 'runs/testing/test7140'
-    gt_depth_dirpath = root_dirpath / 'data/DenseZipNeRF/runs/testing/test7001'
+    gt_depth_dirpath = root_dirpath / 'data/dense_input_radiance_fields/ZipNeRF/runs/testing/test7001'
     frames_data_path = database_dirpath / 'train_test_sets/set04/TestVideosData.csv'
     pred_depths_dirname = 'predicted_depths'
     resolution_suffix = '_down4'

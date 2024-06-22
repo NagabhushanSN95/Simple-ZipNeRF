@@ -73,7 +73,7 @@ def demo1():
     root_dirpath = Path('../../../../')
     pred_videos_dirpath = root_dirpath / 'runs/testing/test1001'
     database_dirpath = root_dirpath / 'data/databases/NeRF_LLFF/data'
-    gt_depth_dirpath = root_dirpath / 'data/DenseNeRF/runs/testing/test1001'
+    gt_depth_dirpath = root_dirpath / 'data/dense_input_radiance_fields/NeRF/runs/testing/test1001'
     frames_data_path = database_dirpath / 'train_test_sets/set02/TestVideosData.csv'
     pred_frames_dirname = 'predicted_frames'
     pred_depths_dirname = 'predicted_depths'
@@ -128,7 +128,7 @@ def parse_args():
     parser.add_argument('--pred_depths_dirname', default='predicted_depths')
     parser.add_argument('--resolution_suffix', default='_down4')
     parser.add_argument('--downsampling_factor', type=int, default=1)
-    parser.add_argument('--mask_folder_name', default='object_masks')
+    parser.add_argument('--mask_folder_name', default=None)
     args = parser.parse_args()
 
     args_dict = {

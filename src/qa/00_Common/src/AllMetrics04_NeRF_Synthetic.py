@@ -119,7 +119,7 @@ def parse_args():
     parser.add_argument('--pred_frames_dirname', default='predicted_frames')
     parser.add_argument('--pred_depths_dirname', default='predicted_depths')
     parser.add_argument('--downsampling_factor', type=int, default=1)
-    parser.add_argument('--mask_folder_name', default='object_masks')
+    parser.add_argument('--mask_folder_name', default=None)
     args = parser.parse_args()
 
     args_dict = {

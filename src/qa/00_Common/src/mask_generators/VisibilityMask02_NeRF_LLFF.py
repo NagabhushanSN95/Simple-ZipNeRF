@@ -173,8 +173,8 @@ def demo1():
         'database_name': 'NeRF_LLFF',
         'database_dirpath': 'NeRF_LLFF/data',
         'resolution_suffix': '_down4',
-        'dense_nerf_dirpath': 'data/DenseNeRF/runs/training/train1001',
-        'depth_dirpath': 'data/DenseNeRF/runs/testing/test1001',
+        'dense_nerf_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/training/train1001',
+        'depth_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/testing/test1001',
         'depth_error_threshold': 0.05,
     }
     start_generation(gen_configs)
@@ -186,8 +186,8 @@ def demo1():
         'database_name': 'NeRF_LLFF',
         'database_dirpath': 'NeRF_LLFF/data',
         'resolution_suffix': '_down4',
-        'dense_nerf_dirpath': 'data/DenseNeRF/runs/training/train1001',
-        'depth_dirpath': 'data/DenseNeRF/runs/testing/test1001',
+        'dense_nerf_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/training/train1001',
+        'depth_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/testing/test1001',
         'depth_error_threshold': 0.05,
     }
     start_generation(gen_configs)
@@ -199,8 +199,8 @@ def demo1():
         'database_name': 'NeRF_LLFF',
         'database_dirpath': 'NeRF_LLFF/data',
         'resolution_suffix': '_down4',
-        'dense_nerf_dirpath': 'data/DenseNeRF/runs/training/train1001',
-        'depth_dirpath': 'data/DenseNeRF/runs/testing/test1001',
+        'dense_nerf_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/training/train1001',
+        'depth_dirpath': 'data/dense_input_radiance_fields/NeRF/runs/testing/test1001',
         'depth_error_threshold': 0.05,
     }
     start_generation(gen_configs)

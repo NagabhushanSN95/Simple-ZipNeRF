@@ -168,7 +168,7 @@ def demo1():
     root_dirpath = Path('../../../../')
     pred_videos_dirpath = root_dirpath / 'runs/testing/test0011'
     database_dirpath = root_dirpath / 'data/databases/RealEstate10K/data'
-    gt_depth_dirpath = root_dirpath / 'data/DenseNeRF/runs/testing/test0001'
+    gt_depth_dirpath = root_dirpath / 'data/dense_input_radiance_fields/NeRF/runs/testing/test0001'
     frames_data_path = database_dirpath / 'train_test_sets/set12/TestVideosData.csv'
     pred_depths_dirname = 'predicted_depths'
     downsampling_factor = 1

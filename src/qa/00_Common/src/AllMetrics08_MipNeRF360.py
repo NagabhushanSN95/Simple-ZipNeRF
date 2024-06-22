@@ -49,35 +49,10 @@ def run_all_qa(pred_videos_dirpath: Path, database_dirpath: Path, gt_depth_dirpa
         this_filepath.parent / '../../02_PSNR/src/PSNR08_MipNeRF360.py',
         this_filepath.parent / '../../03_SSIM/src/SSIM08_MipNeRF360.py',
         this_filepath.parent / '../../04_LPIPS/src/LPIPS08_MipNeRF360.py',
-        # this_filepath.parent / '../../11_MaskedRMSE/src/MaskedRMSE08_MipNeRF360.py',
-        this_filepath.parent / '../../11_MaskedRMSE/src/MaskedRMSE18_MipNeRF360.py',
-        # this_filepath.parent / '../../11_MaskedRMSE/src/MaskedRMSE28_MipNeRF360.py',
-        # this_filepath.parent / '../../12_MaskedPSNR/src/MaskedPSNR08_MipNeRF360.py',
-        this_filepath.parent / '../../12_MaskedPSNR/src/MaskedPSNR18_MipNeRF360.py',
-        # this_filepath.parent / '../../12_MaskedPSNR/src/MaskedPSNR28_MipNeRF360.py',
-        # this_filepath.parent / '../../13_MaskedSSIM/src/MaskedSSIM08_MipNeRF360.py',
-        this_filepath.parent / '../../13_MaskedSSIM/src/MaskedSSIM18_MipNeRF360.py',
-        # this_filepath.parent / '../../13_MaskedSSIM/src/MaskedSSIM28_MipNeRF360.py',
-        # this_filepath.parent / '../../14_MaskedLPIPS/src/MaskedLPIPS08_MipNeRF360.py',
-        this_filepath.parent / '../../14_MaskedLPIPS/src/MaskedLPIPS18_MipNeRF360.py',
-        # this_filepath.parent / '../../14_MaskedLPIPS/src/MaskedLPIPS28_MipNeRF360.py',
 
-        this_filepath.parent / '../../05_DepthRMSE/src/DepthRMSE08_MipNeRF360.py',
-        # this_filepath.parent / '../../06_DisparityRMSE/src/DisparityRMSE08_MipNeRF360.py',
-        this_filepath.parent / '../../07_DepthMAE/src/DepthMAE08_MipNeRF360.py',
+        this_filepath.parent / '../../05_DepthRMSE/src/DepthRMSE18_MipNeRF360.py',
         this_filepath.parent / '../../07_DepthMAE/src/DepthMAE18_MipNeRF360.py',
-        # this_filepath.parent / '../../08_DisparityMAE/src/DisparityMAE08_MipNeRF360.py',
         this_filepath.parent / '../../09_DepthSROCC/src/DepthSROCC08_MipNeRF360.py',
-        # this_filepath.parent / '../../10_DisparitySROCC/src/DisparitySROCC08_MipNeRF360.py',
-        # this_filepath.parent / '../../15_MaskedDepthRMSE/src/MaskedDepthRMSE08_MipNeRF360.py',
-        this_filepath.parent / '../../15_MaskedDepthRMSE/src/MaskedDepthRMSE18_MipNeRF360.py',
-        # this_filepath.parent / '../../15_MaskedDepthRMSE/src/MaskedDepthRMSE28_MipNeRF360.py',
-        # this_filepath.parent / '../../17_MaskedDepthMAE/src/MaskedDepthMAE08_MipNeRF360.py',
-        this_filepath.parent / '../../17_MaskedDepthMAE/src/MaskedDepthMAE18_MipNeRF360.py',
-        # this_filepath.parent / '../../17_MaskedDepthMAE/src/MaskedDepthMAE28_MipNeRF360.py',
-        # this_filepath.parent / '../../19_MaskedDepthSROCC/src/MaskedDepthSROCC08_MipNeRF360.py',
-        this_filepath.parent / '../../19_MaskedDepthSROCC/src/MaskedDepthSROCC18_MipNeRF360.py',
-        # this_filepath.parent / '../../19_MaskedDepthSROCC/src/MaskedDepthSROCC28_MipNeRF360.py',
     ]
     qa_scores = run_all_specified_qa(frame_metric_filepaths, pred_videos_dirpath, database_dirpath, gt_depth_dirpath,
                                      frames_datapath, pred_frames_dirname, pred_depths_dirname, resolution_suffix,
@@ -88,15 +63,16 @@ def run_all_qa(pred_videos_dirpath: Path, database_dirpath: Path, gt_depth_dirpa
 
 
 def demo1():
-    pred_videos_dirpath = Path('../../../view_synthesis/literature/020_ZipNeRF_PyTorch/runs/testing/test7013')
-    database_dirpath = Path('../../../../databases/MipNeRF360/data')
-    gt_depth_dirpath = Path('../../../view_synthesis/literature/020_ZipNeRF_PyTorch/runs/testing/test7008')
-    frames_data_path = Path('../../../../databases/MipNeRF360/data/train_test_sets/set02/TestVideosData.csv')
+    root_dirpath = Path('../../../../')
+    pred_videos_dirpath = root_dirpath / 'runs/testing/test7140'
+    database_dirpath = root_dirpath / 'data/databases/MipNeRF360/data'
+    gt_depth_dirpath = root_dirpath / 'data/dense_input_radiance_fields/ZipNeRF/runs/testing/test7001'
+    frames_data_path = database_dirpath / 'train_test_sets/set04/TestVideosData.csv'
     pred_frames_dirname = 'predicted_frames'
     pred_depths_dirname = 'predicted_depths'
     resolution_suffix = '_down4'
     downsampling_factor = 1
-    mask_folder_name = 'VM02'
+    mask_folder_name = None
     qa_scores = run_all_qa(pred_videos_dirpath, database_dirpath, gt_depth_dirpath, frames_data_path,
                            pred_frames_dirname, pred_depths_dirname, resolution_suffix, downsampling_factor, mask_folder_name)
     return qa_scores
@@ -145,7 +121,7 @@ def parse_args():
     parser.add_argument('--pred_depths_dirname', default='predicted_depths')
     parser.add_argument('--resolution_suffix', default='_down4')
     parser.add_argument('--downsampling_factor', type=int, default=1)
-    parser.add_argument('--mask_folder_name', default='object_masks')
+    parser.add_argument('--mask_folder_name', default=None)
     args = parser.parse_args()
 
     args_dict = {
