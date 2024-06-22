@@ -1,0 +1,28 @@
+# Parameters for Config:
+# ==============================================================================
+Config.batch_size = 8192
+Config.data_dir = '../../../../../databases/MipNeRF360/data/'
+Config.dataset_loader = 'llff'
+Config.factor = 4
+Config.far = 1000000.0
+Config.near = 0.2
+Config.render_chunk_size = 8192
+Config.scene_name = 'stump'
+Config.test_set_num = 1
+Config.train_num = 7007
+Config.train_set_num = 1
+
+# Parameters for Model:
+# ==============================================================================
+Model.opaque_background = True
+Model.raydist_fn = 'power_transformation'
+
+# Parameters for NerfMLP:
+# ==============================================================================
+NerfMLP.disable_density_normals = True
+
+# Parameters for PropMLP:
+# ==============================================================================
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1

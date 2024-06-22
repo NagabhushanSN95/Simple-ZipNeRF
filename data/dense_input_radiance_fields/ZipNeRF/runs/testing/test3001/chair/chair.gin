@@ -1,0 +1,22 @@
+Config.data_dir = '../../../../../databases/NeRF_Synthetic/data/'
+Config.dataset_loader = 'blender'
+Config.train_num = 3001
+Config.test_num = 3001
+Config.train_set_num = 1
+Config.test_set_num = 1
+Config.scene_name = "chair"
+Config.near = 2
+Config.far = 6
+Config.factor = 0
+Config.hash_decay_mults = 10
+ 
+Model.raydist_fn = None
+ 
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1
+ 
+NerfMLP.disable_density_normals = True
+ 
+Config.background_alpha_loss_name = 'BackgroundAlphaLoss01'
+Config.background_alpha_loss_mult = 0.01

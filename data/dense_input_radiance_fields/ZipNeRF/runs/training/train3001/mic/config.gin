@@ -1,0 +1,30 @@
+# Parameters for Config:
+# ==============================================================================
+Config.background_alpha_loss_mult = 0.01
+Config.background_alpha_loss_name = 'BackgroundAlphaLoss01'
+Config.batch_size = 4096
+Config.data_dir = '../../../../../databases/NeRF_Synthetic/data/'
+Config.dataset_loader = 'blender'
+Config.factor = 0
+Config.far = 6
+Config.hash_decay_mults = 10
+Config.near = 2
+Config.render_chunk_size = 4096
+Config.scene_name = 'mic'
+Config.test_set_num = 1
+Config.train_num = 3001
+Config.train_set_num = 1
+
+# Parameters for Model:
+# ==============================================================================
+Model.raydist_fn = None
+
+# Parameters for NerfMLP:
+# ==============================================================================
+NerfMLP.disable_density_normals = True
+
+# Parameters for PropMLP:
+# ==============================================================================
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1
