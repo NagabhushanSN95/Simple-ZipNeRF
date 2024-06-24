@@ -21,7 +21,7 @@ from pathlib import Path
 from tqdm import tqdm
 from matplotlib import pyplot
 
-import llff.poses.colmap_read_model as read_model
+import libraries.llff.poses.colmap_read_model as read_model
 
 this_filepath = Path(__file__)
 this_filename = this_filepath.stem
