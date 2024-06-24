@@ -1,6 +1,8 @@
 name: SimpleZipNeRF
 channels:
   - defaults
+  - pytorch
+  - nvidia
 dependencies:
   - python=3.9
   - cudatoolkit-dev
