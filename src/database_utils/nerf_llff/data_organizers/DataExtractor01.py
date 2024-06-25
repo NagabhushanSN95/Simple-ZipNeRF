@@ -17,7 +17,7 @@ import pandas
 import skimage.io
 from tqdm import tqdm
 
-import prior_generators.sparse_depth.llff.poses.colmap_read_model as read_model
+import libraries.llff.poses.colmap_read_model as read_model
 
 this_filepath = Path(__file__)
 this_filename = this_filepath.stem

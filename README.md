@@ -69,7 +69,7 @@ SOFTWARE.
 If you use this code for your research, please cite our paper
 
 ```bibtex
-@article{somraj2024SimpleRF,
+@article{somraj2024simplerf,
     title = {{Simple-RF}: Regularizing Sparse Input Radiance Fields with Simpler Solutions},
     author = {Somraj, Nagabhushan and Mupparaju, Sai Harsha and Karanayil, Adithyan and Soundararajan, Rajiv},
     journal = {arXiv: 2404.19015},
