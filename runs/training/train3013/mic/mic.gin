@@ -1,4 +1,4 @@
-Config.data_dir = '../../../../../databases/NeRF_Synthetic/data/'
+Config.data_dir = '../data/databases/NeRF_Synthetic/data/'
 Config.dataset_loader = 'blender'
 Config.train_num = 3013
 Config.train_set_num = 3
