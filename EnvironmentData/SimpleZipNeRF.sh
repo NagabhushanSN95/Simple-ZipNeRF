@@ -9,4 +9,5 @@ pip install ./nvdiffrast
 CUDA=cu117
 pip install torch-scatter -f https://data.pyg.org/whl/torch-2.0.0+${CUDA}.html
 conda install -c conda-forge pandas deepdiff sk-video simplejson -y
+conda install -c conda-forge libstdcxx-ng=12 -y
 pip install numpy==1.23 lpips
