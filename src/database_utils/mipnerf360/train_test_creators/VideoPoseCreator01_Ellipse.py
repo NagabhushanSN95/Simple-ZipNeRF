@@ -192,7 +192,7 @@ def save_configs(output_dirpath: Path, configs: dict):
 
 
 def save_video_poses(configs: dict):
-    root_dirpath = Path('../../')
+    root_dirpath = Path('../../../../data/databases/MipNeRF360/')
     set_num = configs['set_num']
     num_frames = configs['num_frames']
     constant_speed = configs['constant_speed']
@@ -226,6 +226,36 @@ def demo1():
     configs = {
         'PosesCreator': this_filename,
         'set_num': 1,
+        'num_frames': 960,
+        'constant_speed': True,
+        'z_variation': 0,
+        'z_phase': 0,
+    }
+    save_video_poses(configs)
+
+    configs = {
+        'PosesCreator': this_filename,
+        'set_num': 4,
+        'num_frames': 960,
+        'constant_speed': True,
+        'z_variation': 0,
+        'z_phase': 0,
+    }
+    save_video_poses(configs)
+
+    configs = {
+        'PosesCreator': this_filename,
+        'set_num': 6,
+        'num_frames': 960,
+        'constant_speed': True,
+        'z_variation': 0,
+        'z_phase': 0,
+    }
+    save_video_poses(configs)
+
+    configs = {
+        'PosesCreator': this_filename,
+        'set_num': 10,
         'num_frames': 960,
         'constant_speed': True,
         'z_variation': 0,
