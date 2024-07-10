@@ -87,7 +87,7 @@ cd ../../../
    ```
 
 ## NeRF-Synthetic
-1. Download the [`nerf_synthetic.zip`](https://drive.google.com/file/d/16VnMcF1KJYxN9QId6TClMsZRahHNMW5g/view?usp=share_link) file from original release in google drive. Place the downloaded file at `Data/databases/NeRF_Synthetic/data/raw/downloaded_data/nerf_synthetic.zip`.
+1. Download the [`nerf_synthetic.zip`](https://drive.google.com/file/d/18JxhpWD-4ZmuFKLzKlAw-w5PpzZxXOcG/view?usp=drive_link) file from original release in google drive. Place the downloaded file at `Data/databases/NeRF_Synthetic/data/raw/downloaded_data/nerf_synthetic.zip`.
 
 2. Run the data extractor file:
    ```shell

@@ -30,8 +30,8 @@ Please follow the instructions in [database_utils/README.md](src/database_utils/
 The files `TrainerTester08_MipNeRF360.sh`, `TrainerTester04_NeRF_Synthetic.sh` contain the code for training, testing and quality assessment along with the configs for the respective databases.
 ```shell
 cd src/
-bash TrainerTester08_MipNeRF360.sh ../runs/training/train7140/Configs.gin --train_set_num 4
-bash TrainerTester04_NeRF_Synthetic.sh ../runs/training/train3012/Configs.gin --train_set_num 2
+bash TrainerTester08_MipNeRF360.sh ../runs/training/train7140/Configs.gin train_set_num=4
+bash TrainerTester04_NeRF_Synthetic.sh ../runs/training/train3012/Configs.gin train_set_num=2
 cd ../
 ```
 
