@@ -34,7 +34,7 @@ class SSIM:
     def compute_frame_ssim(gt_frame: numpy.ndarray, eval_frame: numpy.ndarray):
         gt_frame = gt_frame
         eval_frame = eval_frame
-        ssim = structural_similarity(gt_frame, eval_frame, multichannel=True, gaussian_weights=True, sigma=1.5,
+        ssim = structural_similarity(gt_frame, eval_frame, channel_axis=2, gaussian_weights=True, sigma=1.5,
                                             use_sample_covariance=False)
         return ssim
 

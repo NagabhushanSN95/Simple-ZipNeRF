@@ -94,7 +94,7 @@ fi
 database_dirpath=$root_dirpath/data/databases/MipNeRF360/data
 gt_depth_dirpath=$root_dirpath/data/dense_input_radiance_fields/ZipNeRF/runs/testing/test$gt_depth_test_num
 test_frames_datapath=$database_dirpath/train_test_sets/set$test_set_num/TestVideosData.csv
-qa_filepath=$root_root_dirpath/src/qa/00_Common/src/AllMetrics08_MipNeRF360.py
+qa_filepath=$root_dirpath/src/qa/00_Common/src/AllMetrics08_MipNeRF360.py
 
 # print all variable values
 declare -p scene_names configs_path root_dirpath database_dirpath gt_depth_test_num gt_depth_dirpath train_set_num test_set_num test_frames_datapath train_num train_dirpath test_num test_dirpath video_env_name framerate qa_env_name qa_masks_dirname qa_filepath batch_size render_chunk_size
