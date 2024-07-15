@@ -13,7 +13,7 @@ Official code release accompanying the paper "Simple-RF: Regularizing Sparse Inp
 Environment details are available in `EnvironmentData/SimpleZipNeRF.yml`. The environment can be created using conda
 ```shell
 cd EnvironmentData
-conda env create -f SimpleZipNeRF_History.yml
+bash Install_SimpleZipNeRF.sh
 conda activate SimpleZipNeRF
 cd ..
 ```
