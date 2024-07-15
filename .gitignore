@@ -18,11 +18,15 @@ data/databases/MipNeRF360/data/raw/unzipped_data/*.txt
 runs/**/training/train*/**/*.png
 runs/**/training/train*/**/*.npy
 runs/**/training/train*/**/*.npz
-runs/**/training/train*/**/*.tar
+runs/**/training/train*/**/saved_models
+runs/**/training/train*/**/logs
 runs/**/training/train*/**/events*
 runs/**/testing/test*/**/*.png
 runs/**/testing/test*/**/*.mp4
 runs/**/testing/test*/**/*.npy
 runs/**/testing/test*/**/*.npz
+runs/**/testing/test*/**/*.tiff
+runs/**/testing/test*/**/logs
 tmp/
 .idea/
+__pycache__/
