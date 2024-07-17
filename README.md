@@ -17,6 +17,9 @@ bash Install_SimpleZipNeRF.sh
 cd ..
 ```
 
+> [!IMPORTANT]
+> Document the installation issue here.
+
 ### Add the source directory to PYTHONPATH
 ```shell
 export PYTHONPATH=<ABSOLUTE_PATH_TO_SIMPLERF_DIR>/src:$PYTHONPATH
