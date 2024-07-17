@@ -18,7 +18,7 @@ cd ..
 ```
 
 > [!CAUTION]
-> Document the installation issue here.
+> Sometimes the new environment doesn't activate when done through a bash script. Please ensure that that SimpleZipNeRF environment is activated before the other packages installation begins otherwise the packages get installed in the base environment.
 
 ### Add the source directory to PYTHONPATH
 ```shell
