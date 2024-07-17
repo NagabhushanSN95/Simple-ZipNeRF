@@ -14,7 +14,6 @@ Environment details are available in `EnvironmentData/SimpleZipNeRF.yml`. The en
 ```shell
 cd EnvironmentData
 bash Install_SimpleZipNeRF.sh
-conda activate SimpleZipNeRF
 cd ..
 ```
 
