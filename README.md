@@ -17,7 +17,7 @@ bash Install_SimpleZipNeRF.sh
 cd ..
 ```
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Document the installation issue here.
 
 ### Add the source directory to PYTHONPATH
