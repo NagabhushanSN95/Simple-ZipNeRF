@@ -1,7 +1,6 @@
 # Shree KRISHNAya Namaha
 # Takes Configs.py and creates new configs file in scene_name for every scene. This can then be used by bash file to
 # call individual train and test commands.
-# Modified from ConfigsCreator08_MipNeRF360.py
 # Author: Nagabhushan S N
 # Last Modified: 23/03/2024
 

@@ -748,7 +748,7 @@ def render_image(model,
 
     height, width = batch['origins'].shape[:2]
     num_rays = height * width
-    batch = {k: v.reshape((num_rays, -1)) for k, v in batch.items() if v is not None}
+    batch = {k: v.reshape((num_rays, -1)) for k, v in batch.items() if v is not None and k != 'common_data'}
 
     global_rank = accelerator.process_index
     chunks = []

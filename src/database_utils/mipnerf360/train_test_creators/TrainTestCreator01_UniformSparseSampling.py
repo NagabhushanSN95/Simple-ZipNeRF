@@ -42,7 +42,7 @@ def create_data_frame(frames_data: list):
 
 
 def create_train_test_set(configs: dict):
-    root_dirpath = Path('../../')
+    root_dirpath = Path('../../../../data/databases/MipNeRF360/')
 
     set_num = configs['set_num']
     num_train_frames = configs['num_train_frames']

@@ -200,7 +200,7 @@ def main():
     root_dirpath = Path('../../../../')
     database_dirpath = root_dirpath / 'data/databases/MipNeRF360/data/'
     download_dirpath = database_dirpath / 'raw/downloaded_data'
-    unzipped_dirpath = database_dirpath / '/raw/unzipped_data'
+    unzipped_dirpath = database_dirpath / 'raw/unzipped_data'
     database_data_dirpath = database_dirpath / 'all/database_data'
 
     download_data(download_dirpath)

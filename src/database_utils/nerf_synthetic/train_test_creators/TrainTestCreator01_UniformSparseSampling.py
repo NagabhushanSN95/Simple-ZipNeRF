@@ -32,7 +32,7 @@ def create_data_frame(frames_data: list):
 
 
 def create_train_test_set(configs: dict):
-    root_dirpath = Path('../../')
+    root_dirpath = Path('../../../../data/databases/NeRF_Synthetic/')
 
     set_num = configs['set_num']
     set_dirpath = root_dirpath / f'data/train_test_sets/set{set_num:02}'

@@ -504,6 +504,7 @@ class Dataset(torch.utils.data.Dataset):
         augmentation_data_needed = (self.split == DataSplit.TRAIN) and self.config.augmentation01 and (self.config.augmentation_loss_mults[0] > 0)
         if augmentation_data_needed:
             # For augmentation loss
+            cam_idx = np.broadcast_to(cam_idx, pix_x_int.shape)
             batch['pixel_id'] = np.stack([cam_idx, pix_x_int, pix_y_int], axis=-1)
             common_data = {
                 'images_all': self.images,

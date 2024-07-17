@@ -12,8 +12,13 @@ Official code release accompanying the paper "Simple-RF: Regularizing Sparse Inp
 ### Python Environment
 Environment details are available in `EnvironmentData/SimpleZipNeRF.yml`. The environment can be created using conda
 ```shell
-conda env create -f SimpleZipNeRF.yml
+cd EnvironmentData
+bash Install_SimpleZipNeRF.sh
+cd ..
 ```
+
+> [!CAUTION]
+> Sometimes the new environment doesn't activate when done through a bash script. Please ensure that that SimpleZipNeRF environment is activated before the other packages installation begins otherwise the packages get installed in the base environment.
 
 ### Add the source directory to PYTHONPATH
 ```shell
@@ -27,8 +32,8 @@ Please follow the instructions in [database_utils/README.md](src/database_utils/
 The files `TrainerTester08_MipNeRF360.sh`, `TrainerTester04_NeRF_Synthetic.sh` contain the code for training, testing and quality assessment along with the configs for the respective databases.
 ```shell
 cd src/
-bash TrainerTester08_MipNeRF360.sh ../runs/training/train7140/Configs.gin --train_set_num 4
-bash TrainerTester04_NeRF_Synthetic.sh ../runs/training/train3012/Configs.gin --train_set_num 2
+bash TrainerTester08_MipNeRF360.sh ../runs/training/train7140/Configs.gin train_set_num=4
+bash TrainerTester04_NeRF_Synthetic.sh ../runs/training/train3012/Configs.gin train_set_num=2
 cd ../
 ```
 

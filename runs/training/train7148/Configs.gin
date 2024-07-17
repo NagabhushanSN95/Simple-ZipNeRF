@@ -1,4 +1,4 @@
-Config.data_dir = '../../../../../databases/MipNeRF360/data/'
+Config.data_dir = '../data/databases/MipNeRF360/data/'
 Config.dataset_loader = 'llff'
 
 Config.near = 0.2
