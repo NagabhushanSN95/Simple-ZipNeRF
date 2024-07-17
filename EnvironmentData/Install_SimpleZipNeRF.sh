@@ -1,5 +1,5 @@
-conda create --name SimpleZipNeRF1 python=3.9 -y 
-conda activate SimpleZipNeRF1
+conda create --name SimpleZipNeRF python=3.9 -y 
+conda activate SimpleZipNeRF
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 conda install -c "nvidia/label/cuda-11.7.1" cuda-toolkit -y
 pip install -r requirements.txt
